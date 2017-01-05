@@ -9,6 +9,7 @@
 
     <!-- Bootstrap -->
     <link href="css/bootstrap.min.css" rel="stylesheet">
+    <link rel="stylesheet" type="text/css" href="view.css" media="screen" />
 
     <!-- HTML5 shim and Respond.js for IE8 support of HTML5 elements and media queries -->
     <!-- WARNING: Respond.js doesn't work if you view the page via file:// -->
@@ -17,28 +18,33 @@
       <script src="https://oss.maxcdn.com/respond/1.4.2/respond.min.js"></script>
     <![endif]-->
    <h1> Welcome to Doggo</h1>
-   <h3> A place to keep track of your dogs! </h3>
+   <h3> A great place to keep track of everything about your dogs! </h3>
 </head>
 <body>    
  <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.12.4/jquery.min.js"></script>
     <!-- Include all compiled plugins (below), or include individual files as needed -->
     <script src="js/bootstrap.min.js"></script>
-    <style>
-    body{
-background-color: #fffffd;
-font-family: "Arial";
-}
-h1{
-
-    color: #454545;
-    text-align: center;
-}
-
-h3{
-   text-align: center;
-    color: gray;
-}
-</style>
+      <div class = "center" id = "dog"><img src =  "http://publicdomainvectors.org/photos/1332611679.png" ></div>
+      <form>
+  <div class="form-group">
+    <label for="exampleInputDog1">What is your dog's name?</label>
+    <input type="email" class="form-control" id="exampleInputDog1" aria-describedby="emailHelp" placeholder="Enter dog's name">
+  </div>
+  <div class="form-group">
+    <label for="exampleInputBreed1">What is the breed?</label>
+    <input type="email" class="form-control" id="exampleInputBreed1" placeholder="Breed">
+  </div>
+  <div class="form-group">
+    <label for="exampleSelect1">What do you want to be reminded of?</label>
+    <select class="form-control" id="exampleSelect1">
+      <option>Give it love</option>
+      <option>Give it food</option>
+      <option>Give it water</option>
+      <option>Give it a walk</option>
+    </select>
+  </div>
+  <button type="submit" class="btn btn-primary">Submit</button>
+</form>
 </body>
 
 
