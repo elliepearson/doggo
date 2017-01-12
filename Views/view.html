@@ -8,43 +8,45 @@
     <title>Doggo Pupper Woofer</title>
 
     <!-- Bootstrap -->
-    <link href="css/bootstrap.min.css" rel="stylesheet">
+    <link href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.6/css/bootstrap.min.css" rel="stylesheet">
     <link rel="stylesheet" type="text/css" href="view.css" media="screen" />
-
-    <!-- HTML5 shim and Respond.js for IE8 support of HTML5 elements and media queries -->
-    <!-- WARNING: Respond.js doesn't work if you view the page via file:// -->
-    <!--[if lt IE 9]>
-      <script src="https://oss.maxcdn.com/html5shiv/3.7.3/html5shiv.min.js"></script>
-      <script src="https://oss.maxcdn.com/respond/1.4.2/respond.min.js"></script>
-    <![endif]-->
    <h1> Welcome to Doggo</h1>
    <h3> A great place to keep track of everything about your dogs! </h3>
+   <br>
 </head>
 <body>    
- <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.12.4/jquery.min.js"></script>
-    <!-- Include all compiled plugins (below), or include individual files as needed -->
-    <script src="js/bootstrap.min.js"></script>
-      <div class = "center" id = "dog"><img src =  "http://publicdomainvectors.org/photos/1332611679.png" ></div>
+ 
+      <img src =  "http://publicdomainvectors.org/photos/1332611679.png" class="img-responsive center-block" width="200" height="150">
+      <br>
+      <br>
       <form>
   <div class="form-group">
     <label for="exampleInputDog1">What is your dog's name?</label>
-    <input type="email" class="form-control" id="exampleInputDog1" aria-describedby="emailHelp" placeholder="Enter dog's name">
+    <input type="text" class="form-control" id="name" placeholder="Name">
   </div>
+  <br>
   <div class="form-group">
     <label for="exampleInputBreed1">What is the breed?</label>
-    <input type="email" class="form-control" id="exampleInputBreed1" placeholder="Breed">
+    <input type="text" class="form-control" id="breed" placeholder="Breed">
   </div>
+  <br>
   <div class="form-group">
     <label for="exampleSelect1">What do you want to be reminded of?</label>
     <select class="form-control" id="exampleSelect1">
+    <option>--Chose one--</option>
       <option>Give it love</option>
       <option>Give it food</option>
       <option>Give it water</option>
       <option>Give it a walk</option>
     </select>
   </div>
-  <button type="submit" class="btn btn-primary">Submit</button>
+  <br>
+  <button id="submit" type="button" class="btn btn-primary">Submit</button>
 </form>
+<script src="https://ajax.googleapis.com/ajax/libs/jquery/1.12.4/jquery.min.js"></script>
+    <!-- Include all compiled plugins (below), or include individual files as needed -->
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.6/js/bootstrap.min.js"></script>
+    <script src="view.js"></script>
 </body>
 
 
