@@ -1,0 +1,65 @@
+<!DOCTYPE html>
+<html lang="en">
+<head> 
+<meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <!-- The above 3 meta tags *must* come first in the head; any other head content must come *after* these tags -->
+    <title>Doggo Pupper Woofer</title>
+
+    <!-- Bootstrap -->
+    <link href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.6/css/bootstrap.min.css" rel="stylesheet">
+    <link rel="stylesheet" type="text/css" href="view.css" media="screen" />
+   <h1> Welcome to Doggo</h1>
+   <h3> A great place to keep track of everything about your dogs! </h3>
+   <br>
+</head>
+<body >    
+ <div class = "container">
+      <img src =  "http://publicdomainvectors.org/photos/1332611679.png" class="img-responsive center-block" width="200" height="150">
+      <br>
+      <br>
+      <form>
+  <div class="form-inline">
+    <label for="exampleInputDog1">What is your dog's name?</label>
+    <input type="text" class="form-control" id="name" placeholder="Name">
+  </div>
+  <br>
+  <div class="form-inline">
+    <label for="exampleInputBreed1">What is the breed?</label>
+    <input type="text" class="form-control" id="breed" placeholder="Breed">
+  </div>
+  <br>
+  <div class="form-inline">
+    <label for="exampleSelect1">What do you want to be reminded of?</label>
+    <select class="form-control" id="select">
+    <option>--Chose one--</option>
+      <option>Give it love</option>
+      <option>Give it food</option>
+      <option>Give it water</option>
+      <option>Give it a walk</option>
+    </select>
+  </div>
+  <br>
+   <div class="form-inline" class="input-group clockpicker">
+    <input type="text" class="form-control" value="18:00">
+    <span  class="input-group-addon" class="form-inline">
+        <span  class="glyphicon glyphicon-time" class="form-inline"></span>
+    </span>
+</div>
+
+
+ 
+      <br>
+  <button id="submit" type="button" class="btn btn-primary" onClick = "setName()">Submit</button>
+</form>
+</div>
+<script src="https://ajax.googleapis.com/ajax/libs/jquery/1.12.4/jquery.min.js"></script>
+    <!-- Include all compiled plugins (below), or include individual files as needed -->
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.6/js/bootstrap.min.js"></script>
+    <script src="view.js"></script>
+</body>
+
+
+</html>
+
