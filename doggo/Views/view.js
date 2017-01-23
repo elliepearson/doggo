@@ -14,7 +14,12 @@
 // 	console.log(objForTransport);
 
 // })
+$('.clockpicker').clockpicker({
+    placement: 'top',
+    align: 'left',
+    donetext: 'Done'
+});
 
 function setName(){
-	document.getElementById("submit").innerHTML = "Daisy";
+	document.getElementById("submit").innerHTML = "name";
 }
