@@ -1,7 +1,5 @@
 $(document).ready(function(){
 
-
-
 //printing the object
 $("#submit").on("click", function() {
 	var name = $("#add_name").val();
@@ -19,24 +17,26 @@ console.log(objectSubmit);
 
 localStorage.setItem('objectSubmit', JSON.stringify(objectSubmit));
 objectSubmit = JSON.parse(localStorage.getItem('objectSubmit'));
-document.getElementById("nameSubmit").innerHTML = objectSubmit.name;
-document.getElementById("breedSubmit").innerHTML = objectSubmit.breed;
-document.getElementById("selectSubmit").innerHTML = objectSubmit.select;
-
-})
+$("#nameSubmit").text(objectSubmit.name);
+$("#breedSubmit").text(objectSubmit.breed);
+$("#selectSubmit").text(objectSubmit.select);
 
 
 })
-
- if (localStorage.getItem('objectSubmit') === null){ //set name if no name is set
-	localStorage.setItem('objectSubmit', JSON.stringify('objectSubmit'));
-}
+// if (localStorage.getItem('objectSubmit') === null){ //set name if no name is set
+// 	localStorage.setItem('objectSubmit', JSON.stringify('objectSubmit'));
+// }
 
 
 objectSubmit = JSON.parse(localStorage.getItem('objectSubmit'));
-document.getElementById("nameSubmit").innerHTML = objectSubmit.name;
-document.getElementById("breedSubmit").innerHTML = objectSubmit.breed;
-document.getElementById("selectSubmit").innerHTML = objectSubmit.select;
+$("#nameSubmit").text(objectSubmit.name);
+$("#breedSubmit").text(objectSubmit.breed);
+$("#selectSubmit").text(objectSubmit.select);
+
+
+})
+
+ 
 
 
 

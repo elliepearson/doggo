@@ -1,7 +1,8 @@
  body{
- 	text-align: center;
-background-color: #fffffd;
-font-family: "Arial";
+ 	
+	text-align: center;
+	background-color: #fffffd;
+	font-family: "Arial";
 
 }
 
@@ -12,6 +13,7 @@ h1{
 }
 
 h3{
+
    text-align: center;
     color: gray;
 }
